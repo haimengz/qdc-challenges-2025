@@ -50,11 +50,16 @@ Every afternoon during QDC, attendees will have the opportunity to participate i
 
 Every day there will be two challenges happening in parallel, and you may choose which one you would like to participate in based on your skills and interests. See below a summary of topics covered by each challenge:
 
-### Day 1 - 
+### Track A: Simulation
+- Scattering and particle creation in 1D Ising Field Theory
+- Hadron Dynamics in the Schwinger Model
+- Real-Time Dynamics in a (2+1)-D Gauge Theory
+- Sample-based Krylov Quantum Diagonalization
 
-### Day 2 - 
+### Track B: Optimization
+- Quantum Approximate Multi-Objective Optimization (QMOO)
+- Computing Solute-Solvent Interactions using Sample-based Quantum Diagonalization
 
-### Day 3 - 
 
 ## Learning Resources
 
