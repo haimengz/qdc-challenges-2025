@@ -7,7 +7,7 @@ Welcome to the IBM Quantum Developer Conference 2025! These challenges are desig
 To participate, please complete the setup steps below. Remember to bring a laptop with internet access, as no devices will be provided at the venue.
 
 ### Step 1: Set up Your IBM Quantum Platform Account
-1. [Create an IBM Quantum account](https://quantum.cloud.ibm.com/login) if you haven't already.
+1. [Create an IBM Quantum account](https://quantum.cloud.ibm.com/signin) if you haven't already.
 2. **Sign up using the same email address you registered with for this event**. Your account will be linked to a specific [instance](https://quantum.cloud.ibm.com/instances) for IBM Quantum services.
 
 ### Step 2: Create a Python Environment
@@ -63,5 +63,7 @@ Every day there will be two challenges happening in parallel, and you may choose
 
 ## Learning Resources
 
-The seminars and challenges at QDC are designed to cover a broad range of advanced topics featuring Qiskit tools and capabilities. While participants are not expected to have a deep understanding of everything that will be covered we do recommend familiarizing yourself with the basics before attending the event. See the [cheat sheet](./challenges_cheat_sheet.md) for more information and links to various resources which may help get you started.
+The seminars and challenges at QDC are designed to cover a broad range of advanced topics featuring Qiskit tools and capabilities. While participants are not expected to have a deep understanding of everything that will be covered we do recommend familiarizing yourself with the basics before attending the event. 
+
+See the [cheat sheet](./challenges_cheat_sheet.md) for more information and links to various resources which may help get you started.
 
