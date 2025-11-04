@@ -1,7 +1,7 @@
 # QDC 2025 Challenge Installation Guide
 
 ## Step 0: Create your IBM Cloud account.
-If you haven't done so already, set up your IBM Cloud account by following the instructions [here](https://quantum.cloud.ibm.com/docs/en/guides/cloud-setup).
+[Create an IBM Quantum account](https://quantum.cloud.ibm.com/signin) if you haven't already. **Sign up using the *same email address* you registered with for this event.** Your account will be linked to a specific [instance](https://quantum.cloud.ibm.com/instances) for IBM Quantum services.
 
 ## Step 1: Clone repository.
 
@@ -23,6 +23,9 @@ source qdc2025-venv/bin/activate
 ```
 to create and activate a new virtual environment named **`qdc2025-venv`**.
 
+> **Alternative:** If setting up Python or Jupyter locally is difficult, consider using Google Colab or qBraid. See [this guide](https://quantum.cloud.ibm.com/docs/en/guides/online-lab-environments) for details.
+
+
 ## Step 3: Install required packages.
 
 Finally, install the required packages by running the following line in your open terminal:
@@ -32,9 +35,13 @@ pip install -r requirements.txt
 ```
 Note that some challenges use `graphviz` for plotting, which needs to be installed on your machine independently of Python environment. If you do not have `graphviz` on your machine, please follow instructions [here](https://graphviz.org/download/). 
 
+> **If using an online lab environment:** Use the same `requirements.txt` file and pip command to install the required packages. For qBraid, activate the "QDC 2025" environment under the [Environment tab](https://docs.qbraid.com/lab/user-guide/environments), which comes pre-configured. You can launch the  by clicking the button below Launch on qBraid to clone and open this gitHub link on qBraid Lab.
+
+[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/qiskit-community/qdc-challenges-2025)
+
 ## Step 4: Register the virtual environment as a Jupyter kernel.
 
-If you plan to work in JupyterLab, run the following lines to register your virtual environment as a Jupyter kernel and launch Jupyter. Once Jupyter launches and you open a challenge notebook, please click **`Kernel > Change Kernel...`** and then select **`QDC 2025`** from the dropdown menu to use the correct virtual environment.
+Run the following lines to register your virtual environment as a Jupyter kernel and launch Jupyter. Once Jupyter launches and you open a challenge notebook, please click **`Kernel > Change Kernel...`** and then select **`QDC 2025`** from the dropdown menu to use the correct virtual environment.
 ```
 python -m ipykernel install --user --name=qdc2025-venv --display-name "QDC 2025"
 jupyter notebook
