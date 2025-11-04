@@ -1,5 +1,7 @@
 # IBM Quantum Developer Conference 2025
 
+![QDC Banner](QDC_banner.png "QDC Banner")
+
 Welcome to the IBM Quantum Developer Conference 2025! These challenges are designed to test your quantum computing skills using the Qiskit product features announced during QDC. The competition spans three days and features two challenge tracks.
 
 ## Installation and Setup
