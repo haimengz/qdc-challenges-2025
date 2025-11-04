@@ -311,7 +311,7 @@ class HeavyHexLattice:
         ibm_qubit_coords = []
 
         # Define backend-specific qubit placements
-        if backend_name in ["ibm_fez", "ibm_marrakesh", "ibm_aachen", "ibm_kingston", "ibm_boston", "ibm_pittsburg"]:
+        if backend_name in ["ibm_fez", "ibm_marrakesh", "ibm_aachen", "ibm_kingston", "ibm_boston", "ibm_pittsburgh"]:
             for i in range(8):
                 for j in range(16):
                     ibm_qubit_coords.append((2*i, j))
