@@ -9,40 +9,54 @@ from pyscf import gto, scf
 from pyscf.solvent import pcm
 from pyscf.mcscf import avas 
 
+import psutil
+
+mem_info = psutil.virtual_memory() # Get information about virtual memory (RAM)
+total_ram_gb = mem_info.total / (1024**3)  # Convert bytes to GB
+print(f">>>>> SERVERLESS TOTAL RAM: {total_ram_gb:.2f} GB")
+
 ### Argument retrieval
 args                      = get_arguments() 
 data                      = args["data"]      # Chemistry Data
 
-i_data = JSONDecoder().decode(data) # What should we decode here?
+i_data = JSONDecoder().decode(data)
 
 [mol_geo, eps, ao_labels] = i_data
 
 print(f">>>>> DEFINING MOLECULE")
-# You must complete this coding section
+mol = gto.M()
+mol.atom = mol_geo
+mol.basis = "<XXX>"
+mol.unit= "<XXX>"
+mol.charge= "<XXX>"
+mol.spin= "<XXX>"
+mol.verbose=0
 
 print(f">>>>> BUILDING MOLECULE")
-# You must complete this coding section
-
+# FILL THIS CODE IN (only 1 line is missing)
 
 print(f">>>>> DEFINING PCM")
-# You must complete this coding section
-
+# FILL THIS CODE IN (3 lines are missing)
+cm = "<XXX>"
 
 print(f">>>>> BUILDING RESTRICTED HARTREE FOCK")
-# You must complete this coding section
+# FILL THIS CODE IN (1 line is missing)
+mf = "<XXX>"
 
-
-print(f">>>>> RUNNING AVAS")
-# You must complete this coding section
-
+# Atomic Valence Active Spave, constructs Molecular Orbitals from Atomic Orbitals
+print(f">>>>> RUNNING AVAS") 
+avas_ = avas.AVAS(mf, ao_labels, with_iao=True, canonicalize=True, verbose=0)
+avas_.kernel()
+norb, ne_act, mo_avas = avas_.ncas, avas_.nelecas, avas_.mo_coeff
 
 print(f">>>>> STARTING CASCI")
-# You must complete this coding section
+mc_pcm = pyscf.mcscf.CASCI(mf, norb, ne_act).PCM(cm) # This is how CASCI is run (the classical-baseline method)
+mc_pcm.mo_coeff = mo_avas
 
-CASCI_E = None
+(CASCI_E, _, _, _, _) = mc_pcm.kernel(verbose=0)
+
 print(f">>>>> CASCI_E: {CASCI_E}")
-
-o_data = JSONEncoder().encode([CASCI_E])
+o_data = JSONEncoder().encode([float(CASCI_E)] )
 
 # JSON-safe package
 save_result({"outputs": o_data})  # single JSON blob returned to client
