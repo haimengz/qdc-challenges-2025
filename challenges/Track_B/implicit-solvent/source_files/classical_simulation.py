@@ -37,7 +37,7 @@ print(f">>>>> BUILDING RESTRICTED HARTREE FOCK")
 # FILL THIS CODE IN (1 line is missing)
 mf = "<XXX>"
 
-# Atomic Valence Active Spave, constructs Molecular Orbitals from Atomic Orbitals
+# Atomic Valence Active Space, constructs Molecular Orbitals from Atomic Orbitals
 print(f">>>>> RUNNING AVAS") 
 avas_ = avas.AVAS(mf, ao_labels, with_iao=True, canonicalize=True, verbose=0)
 avas_.kernel()
