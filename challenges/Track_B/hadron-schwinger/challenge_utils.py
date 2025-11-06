@@ -214,7 +214,7 @@ def get_qubit_coordinates(backend, width=None):
     
     connector_width = 4
     if not width:
-        if backend.name in ('ibm_kingston', 'ibm_pittsburgh', 'ibm_marrakesh', 'ibm_fez', 'ibm_aachen', 'ibm_aachen'):
+        if backend.name in ('ibm_kingston', 'ibm_pittsburgh', 'ibm_marrakesh', 'ibm_fez', 'ibm_aachen', 'ibm_aachen', 'ibm_boston'):
             width = 16
         elif backend.name in ('ibm_torino'):
             width = 15
