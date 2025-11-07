@@ -8,6 +8,14 @@ Welcome to the IBM Quantum Developer Conference 2025! These challenges are desig
 
 To participate, please complete the setup instructions outlined in the [INSTALL.md](./INSTALL.md) file of this repository. Remember to bring a laptop with internet access, as no devices will be provided at the venue.
 
+### Access & Credentials
+
+To set up your IBM Quantum access and credentials for the event, use the following steps:
+1. Join the [Qiskit slack](https://qisk.it/join-slack)
+1. Join the [`qdc25-challenges`](https://join.slack.com/share/enQtOTg1MzUyNTg2MzM5OS02ZDc2OGRlNTFhNTZkNTJlNGJkOTRkNTdmYzRjNDZhN2Q0NjA2MzliZjY2ZDZiODlhMWI5NGJiOTlhNWFiNDUx) channel.
+1. Contact `@Sanket` on Slack to retrieve your access credentials
+1. After obtaining your credentials, visit the [following URL](https://ibm.biz/qdc-2025) and login.
+
 ## Challenge Notebooks
 
 The challenge notebooks are available in their respective "Track" folders within the GitHub repository.
