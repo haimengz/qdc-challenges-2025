@@ -8,30 +8,30 @@ Welcome to the IBM Quantum Developer Conference 2025! These challenges are desig
 
 ### Wednesday 11/12
 
-8:00-9:00 Check-in & Light Breakfast
-9:00-12:30 Morning seminars
-12:30-1:30 Lunch
-1:30-3:30 Afternoon Seminars (Optimization & Simulation)
-4:00-5:30 Track A & B challenges begin & Poster Showcase
+- 8:00-9:00 Check-in & Light Breakfast
+- 9:00-12:30 Morning seminars
+- 12:30-1:30 Lunch
+- 1:30-3:30 Afternoon Seminars (Optimization & Simulation)
+- 4:00-5:30 Track A & B challenges begin & Poster Showcase
 
 
 ### Thursday 11/13
 
-8:00-9:00 Check-in & Light Breakfast
-9:00-11:00 Speaker Sessions for Challenges
-11:30-12:30 Poster Showcase & Challenges
-12:30-1:30 Lunch
-1:30-5:30 Poster Showcase & Challenges
-5:30-8:00 Dinner & Entertainment
+- 8:00-9:00 Check-in & Light Breakfast
+- 9:00-11:00 Speaker Sessions for Challenges
+- 11:30-12:30 Poster Showcase & Challenges
+- 12:30-1:30 Lunch
+- 1:30-5:30 Poster Showcase & Challenges
+- 5:30-8:00 Dinner & Entertainment
 
 ### Friday 11/14
 
-8:00-9:00 Check-in & Light Breakfast
-9:00-11:30 Morning Seminars
-11:30-1:00 Lunch
-1:00-4:00 Tutorial Sessions
-4:00-4:30 Closing Remarks (Awards, Winner Talks, QDC[25] Wrap-up)
-4:30-5:30 Cocktail Hour
+- 8:00-9:00 Check-in & Light Breakfast
+- 9:00-11:30 Morning Seminars
+- 11:30-1:00 Lunch
+- 1:00-4:00 Tutorial Sessions
+- 4:00-4:30 Closing Remarks (Awards, Winner Talks, QDC[25] Wrap-up)
+- 4:30-5:30 Cocktail Hour
 
 ## Installation and Setup
 
