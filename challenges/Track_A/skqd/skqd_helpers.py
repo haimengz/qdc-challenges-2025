@@ -108,6 +108,17 @@ def siam_hamiltonian(
 
     return h1e, h2e
 
+def _canonicalize_real_eigvec_signs(V: np.ndarray, anchor_row: int = 0) -> np.ndarray:
+    V = V.copy()
+    signs = np.sign(V[anchor_row, :])
+    # fallback for exact zeros: use the largest-magnitude element as anchor
+    zero = np.isclose(signs, 0.0)
+    if np.any(zero):
+        js = np.where(zero)[0]
+        i_max = np.argmax(np.abs(V[:, js]), axis=0)
+        signs[js] = np.sign(V[i_max, js])
+    signs[signs == 0] = 1.0
+    return V * signs
 
 def momentum_basis(norb: int) -> np.ndarray:
     """Get the orbital rotation to change from the position to the momentum basis.
@@ -126,6 +137,9 @@ def momentum_basis(norb: int) -> np.ndarray:
     np.fill_diagonal(hopping_matrix[1:, :], -1)
     _, vecs = np.linalg.eigh(hopping_matrix)
 
+    # >>> deterministic sign convention <<<
+    vecs = _canonicalize_real_eigvec_signs(vecs, anchor_row=0)
+
     # Expand to include impurity
     orbital_rotation = np.zeros((norb, norb))
     # Impurity is on the first site
@@ -134,11 +148,10 @@ def momentum_basis(norb: int) -> np.ndarray:
 
     # Move the impurity to the center
     new_index = n_bath // 2
-    perm = np.r_[1: (new_index + 1), 0, (new_index + 1) : norb]
+    perm = np.r_[1: (new_index + 1), 0, (new_index + 1): norb]
     orbital_rotation = orbital_rotation[:, perm]
 
     return orbital_rotation
-
 
 def rotated(
     h1e: np.ndarray, h2e: np.ndarray, orbital_rotation: np.ndarray
