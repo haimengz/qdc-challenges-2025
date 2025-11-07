@@ -10,7 +10,7 @@ To participate, please complete the setup instructions outlined in the [INSTALL.
 
 ### Access & Credentials
 
-To set up your IBM Quantum access and credentials, use the following these steps:
+To set up your IBM Quantum access and credentials for the event, use the following steps:
 1. Join the [Qiskit slack](https://qisk.it/join-slack)
 1. Join the [`qdc25-challenges`](https://join.slack.com/share/enQtOTg1MzUyNTg2MzM5OS02ZDc2OGRlNTFhNTZkNTJlNGJkOTRkNTdmYzRjNDZhN2Q0NjA2MzliZjY2ZDZiODlhMWI5NGJiOTlhNWFiNDUx) channel.
 1. Contact `@Sanket` on Slack to retrieve your access credentials
