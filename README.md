@@ -4,7 +4,7 @@
 
 Welcome to the IBM Quantum Developer Conference 2025! These challenges are designed to test your quantum computing skills using the Qiskit product features announced during QDC. The competition spans three days and features two challenge tracks.
 
---
+
 ## Conference Agenda
 
 ### Wednesday 11/12
@@ -30,7 +30,7 @@ Welcome to the IBM Quantum Developer Conference 2025! These challenges are desig
 - 4:00-4:30 Closing Remarks (Awards, Winner Talks, QDC[25] Wrap-up)
 - 4:30-5:30 Closing Reception
 
---
+
 ## Installation and Setup
 
 To participate, please complete the setup instructions outlined in the [INSTALL.md](./INSTALL.md) file of this repository. Remember to bring a laptop with internet access, as no devices will be provided at the venue.
@@ -42,7 +42,7 @@ To set up your IBM Quantum _access credentials_ for the event, use the following
 4. Contact `@Sanket` on Slack to retrieve your team access credentials.
 5. After obtaining your credentials, visit the [following URL](https://ibm.biz/qdc-2025) and login.
 
---
+
 ## Challenge Notebooks
 
 Throughout QDC, attendees will have the opportunity to participate in hands-on coding challenges inspired by recent, impactful results from the quantum computing community.
@@ -69,7 +69,7 @@ The challenge notebooks can be found in their respective Track folders. See belo
 - Sampling: [Computing Solute-Solvent Interactions using Sample-based Quantum Diagonalization](https://github.com/qiskit-community/qdc-challenges-2025/blob/main/challenges/Track_B/implicit-solvent/implicit-solvent-qdc2025.ipynb)
 - Wildcard: [Quantum Approximate Multi-Objective Optimization (QMOO)](https://github.com/qiskit-community/qdc-challenges-2025/blob/main/challenges/Track_B/qmoo/qmoo_qdc25.ipynb)
 
---
+
 ## Learning Resources
 
 The seminars and challenges at QDC are designed to cover a broad range of advanced topics featuring Qiskit tools and capabilities. While participants are not expected to have a deep understanding of everything that will be covered we do recommend familiarizing yourself with the basics before attending the event. 
